@@ -122,12 +122,13 @@ section#skills {
 }
 
 section#contact {
-    background: url(../images/about.png) no-repeat center center/
+    background: url(../images/home.png) no-repeat center center/
     cover;
 }
 
 section#more {
-    background: url(../images/home.png) no-repeat center center/
+    
+    background: url(../images/about.png) no-repeat center center/
     cover;
 }
 
