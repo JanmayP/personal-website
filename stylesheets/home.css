@@ -29,6 +29,7 @@ body {
     height: 60px;
     background-color: #1f1f1f;
     color: #30f0cd;
+    border-bottom: #30f0cd solid 1px;
 }
 
 .navbar ul {
@@ -40,8 +41,8 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem;
+    margin: 0 5px;
+    padding: 15px 25px 15px 25px;
 }
 
 .navbar ul li a {
@@ -54,12 +55,6 @@ body {
     color: white;
 }
 
-hr {
-    border-color: #30f0cd;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 60px;
-}
 
 section {
     display: flex;
@@ -72,20 +67,16 @@ section {
 }
 
 #home h1 {
-    font-size: 3rem;
+    font-size: 3.25rem;
     text-align: center;
 }
 
 section p{
+    font-size: 1.5rem;
+}
+
+#skills .greenspan{
     font-size: 1.75rem;
-}
-
-#about ul li {
-    font-size: 1.25rem;
-}
-
-#skills ul li {
-    font-size: 1.25rem;
 }
 
 #contact ul li {
@@ -105,32 +96,17 @@ section p{
     color: white;
 }
 
-
+/* Background css */
 section#home {
-    background: url(../images/home.png) no-repeat center center/
-    cover;
-}
-
-section#about {
-    background: url(../images/about.png) no-repeat center center/
-    cover;
-}
-
-section#skills {
-    background: url(../images/home.png) no-repeat center center/
+    background: url(../images/wave-top.svg) no-repeat center center/
     cover;
 }
 
 section#contact {
-    background: url(../images/home.png) no-repeat center center/
+    background: url(../images/wave-bottom.svg) no-repeat center center/
     cover;
 }
 
-section#more {
-    
-    background: url(../images/about.png) no-repeat center center/
-    cover;
-}
 
 .greenspan {
     color: #30f0cd;
@@ -145,12 +121,81 @@ section#more {
     display: inline;
 }
 
-#single a {
+#projects a {
     white-space: nowrap;
     text-decoration: none;
     color: #30f0cd;
 }
 
-#single a:hover {
+#projects a:hover {
     color: white;
+}
+
+/* icon grid skills section */
+
+.skillsrow {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 50px;
+}
+
+/* download resume link */
+.resume {
+    border: #1f1f1f solid 2px;
+    padding: 15px;
+    margin: 10px;
+    background: #30f0cd;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+.resume:hover {
+    transition: 0.35s;
+    border:#30f0cd solid 2px;
+    background: #1f1f1f;
+    color:#30f0cd;
+}
+
+/* CSS for skills icons */
+
+.skillscol {
+    display: none;
+}
+
+@media all and (max-width: 850px) {
+    .skillsrow {
+    display: none;
+    }
+    .skillscol{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 50px;
+    }
+    
+}
+
+@media all and (max-width: 600px) {
+    .navbar{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    
+    #home h1 {
+        font-size: 3.25rem;
+        text-align: center;
+    }
+
+    section p{
+        font-size: 1.75rem;
+    }
+
+    #contact ul li {
+        font-size: 1.25rem;
+    }      
 }
