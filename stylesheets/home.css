@@ -153,7 +153,7 @@ section#contact {
 }
 
 .resume:hover {
-    transition: 0.35s;
+    transition: 0.5s;
     border:#30f0cd solid 2px;
     background: #1f1f1f;
     color:#30f0cd;
@@ -178,7 +178,7 @@ section#contact {
     
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 650px) {
     .navbar{
         display: none;
     }
@@ -197,5 +197,87 @@ section#contact {
 
     #contact ul li {
         font-size: 1.25rem;
-    }      
+    }  
+    
+}
+
+/* css for project section */
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-unit {
+    color:#30f0cd;
+    border: 2px solid #30f0cd;
+    border-radius: 15px;
+    margin: 40px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-unit p{
+    font-size: 15px;
+}
+
+.projLink{
+   height: 52px;
+   width: 52px;
+   border-radius: 50%;
+   color:#1f1f1f;
+    background-color: white;
+}
+.projLink img {
+    transform: translate(2px, 2px);
+}
+
+.projLink:hover {
+    transition: 0.65s;
+    background-color: #30f0cd;
+}
+
+
+/* img about me */
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.aboutMe img {
+    height: 200px;
+    width: 200px;
+    border:solid 3px #30f0cd;
+    border-radius: 50%;
+}
+
+/* mobile formatting */
+
+@media (max-width: 650px){
+    
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .aboutMe p{
+        font-size: 1.25rem;
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
