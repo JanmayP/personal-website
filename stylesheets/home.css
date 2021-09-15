@@ -230,7 +230,7 @@ section#contact {
    width: 52px;
    border-radius: 50%;
    color:#1f1f1f;
-    background-color: white;
+    background-color: #30f0cd;
 }
 .projLink img {
     transform: translate(2px, 2px);
@@ -238,24 +238,59 @@ section#contact {
 
 .projLink:hover {
     transition: 0.65s;
-    background-color: #30f0cd;
+    background-color: white;
 }
 
 
-/* img about me */
+/* about me */
 
 .aboutMe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
+    margin: 50px;
 }
 
-.aboutMe img {
-    height: 200px;
-    width: 200px;
-    border:solid 3px #30f0cd;
-    border-radius: 50%;
+/* Contact Links */
+.contactLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contactLink1 {
+    background: #30f0cd;
+    border-radius: 5px;
+    height: 30px;
+    width: 40px;
+    transform: translate(0, 5px);
+}
+.contactLink1:hover{
+    transition: 0.65s;
+    background: white;
+}
+.contactLink1 img {
+    display: block;
+    margin: auto;
+    transform: translate(-5px, -10px);
+}
+
+.contactLink2 {
+    background: #30f0cd;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+}
+.contactLink2:hover{
+    transition: 0.65s;
+    background: #0E76A8;
+}
+.contactLink2 img {
+    display: block;
+    margin: auto;
+    transform: translate(-5px, -5px);
 }
 
 /* mobile formatting */
@@ -281,3 +316,4 @@ section#contact {
         justify-content: space-between;
     }
 }
+
