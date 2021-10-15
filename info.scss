@@ -1,0 +1,185 @@
+body {
+  font-family: "Rubik";
+  margin: 0;
+  background: #001220;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 7.5vh;
+  border-bottom: solid 3px #30f0cd;
+
+  background: #001220;
+
+  h2 a {
+    padding: 0 0 0 5vw;
+    text-decoration: none;
+    color: #30f0cd;
+  }
+
+  ul {
+    padding: 1vh 5vw 0 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2.5vw;
+
+    li {
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: #30f0cd;
+
+        &:hover {
+          transition: 0.35s;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Mobile Responsive Changes
+#home-mobile {
+  display: none;
+}
+.mobile-br {
+  display: none;
+}
+
+.container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 7.5vh;
+  margin: 15vh;
+  gap: 10vh;
+  
+}
+
+section {
+  border-left: solid 4px #30f0cd;
+  padding: 0 0 0 1.5vw;
+
+  h2 {
+    color: #30f0cd;
+  }
+
+  p{ 
+    font-size: 1.25rem;
+    line-height: 2;
+  }
+}
+
+.skillsrow {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+}
+
+.skillscol {
+  display: none;
+}
+
+.projects {
+
+  .project {
+    border-top: 1px solid #30f0cd;
+    border-left: 1px solid #30f0cd;
+    padding: 0 15px;
+    margin: 25px 15px;
+
+    h4 {
+      color: #30f0cd;
+      font-size: 1.25rem;
+    }
+
+    a {
+      padding: 0 15px 0 0;
+      color: #30f0cd;
+      text-decoration: underline;
+
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+
+.green {
+  color: #30f0cd;
+}
+
+.resume {
+  border: #001220 solid 2px;
+  padding: 15px;
+  margin: 10px;
+  background: #28e47c;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #001220;
+  text-decoration: none;
+
+  &:hover {
+    transition: 0.5s;
+    border:#30f0cd solid 2px;
+    background: #001220;
+    color:#30f0cd;
+  }
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 2.5vw;
+ }
+
+@media screen and (max-width: 510px) {
+  #home-mobile {
+    display:block;
+  }
+  #home-desktop {
+    display: none;
+  }
+  
+  
+}
+@media screen and (max-width: 800px) {
+  .mobile-br {
+    display: block;
+  }
+  .container {
+    margin: 15vh 5vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .skillsrow{
+    display: none;
+  }
+  .skillscol {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    margin: 0 0 0 5vw;
+    
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
