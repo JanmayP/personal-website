@@ -79,7 +79,6 @@ body {
   0% { transform: translateX(0); }
   50% { transform: translateX(-50%); }
   100% { transform: translateX(0);}
-
 }
 
 .wave {
@@ -98,7 +97,9 @@ body {
 #home-mobile {
   display: none;
 }
-
+.mobile-br {
+  display: none;
+}
 
 @media screen and (max-width: 510px) {
   #home-mobile {
@@ -109,5 +110,12 @@ body {
   }
   .content { 
     margin:0 0 0 10vw;
+  }
+  .mobile-br {
+    display: block;
+  }
+  .wave {
+    width: 600vw;
+    animation: bg-slide 12s linear infinite;
   }
 }

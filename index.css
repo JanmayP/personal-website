@@ -133,6 +133,10 @@ body {
   display: none;
 }
 
+.mobile-br {
+  display: none;
+}
+
 @media screen and (max-width: 510px) {
   #home-mobile {
     display: block;
@@ -142,6 +146,14 @@ body {
   }
   .content {
     margin: 0 0 0 10vw;
+  }
+  .mobile-br {
+    display: block;
+  }
+  .wave {
+    width: 600vw;
+    -webkit-animation: bg-slide 12s linear infinite;
+            animation: bg-slide 12s linear infinite;
   }
 }
 /*# sourceMappingURL=index.css.map */

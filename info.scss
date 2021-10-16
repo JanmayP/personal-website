@@ -71,16 +71,24 @@ html {
 }
 
 section {
-  border-left: solid 4px #30f0cd;
-  padding: 0 0 0 1.5vw;
-
   h2 {
+    padding:  1.5vw;
+    border-left: solid 4px #30f0cd;
     color: #30f0cd;
   }
 
   p{ 
     font-size: 1.25rem;
     line-height: 2;
+  }
+}
+
+#about {
+  p {
+    border-top: 1px solid #30f0cd;
+    border-left: 1px solid #30f0cd;
+    padding:  20px;
+    margin: 25px 15px;
   }
 }
 
@@ -95,11 +103,14 @@ section {
 }
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5vh;
 
   .project {
     border-top: 1px solid #30f0cd;
     border-left: 1px solid #30f0cd;
-    padding: 0 15px;
+    padding: 20px;
     margin: 25px 15px;
 
     h4 {
@@ -119,6 +130,17 @@ section {
   }
 }
 
+#skills-detailed {
+  display: flex;
+  flex-direction: row;
+  gap: 7.5vh;
+
+  div{
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+
 .green {
   color: #30f0cd;
 }
@@ -127,7 +149,7 @@ section {
   border: #001220 solid 2px;
   padding: 15px;
   margin: 10px;
-  background: #28e47c;
+  background: #30f0cd;
   border-radius: 10px;
   font-size: 20px;
   color: #001220;
@@ -156,9 +178,8 @@ section {
   #home-desktop {
     display: none;
   }
-  
-  
 }
+
 @media screen and (max-width: 800px) {
   .mobile-br {
     display: block;
@@ -166,8 +187,6 @@ section {
   .container {
     margin: 15vh 5vh;
   }
-}
-@media screen and (max-width: 650px) {
   .skillsrow{
     display: none;
   }
@@ -180,6 +199,14 @@ section {
     img {
       height: 50px;
       width: 50px;
+    }
+  }
+  #skills-detailed {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    div {
+      line-height: 1;
     }
   }
 }
