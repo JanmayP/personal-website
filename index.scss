@@ -11,7 +11,7 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   height: 7.5vh;
   border-bottom: solid 3px #30f0cd;
@@ -25,11 +25,11 @@ body {
   }
 
   ul {
-    padding: 1vh 5vw 0 0;
+    padding: 1vh 0 0 0;
     display: flex;
     list-style: none;
     justify-content: center;
-    gap: 2.5vw;
+    gap: 5vw;
 
     li {
       text-transform: uppercase;
@@ -116,6 +116,6 @@ body {
   }
   .wave {
     width: 600vw;
-    animation: bg-slide 12s linear infinite;
+    animation: bg-slide 18s linear infinite;
   }
 }
